@@ -43,11 +43,16 @@ const Navbar = () =>{
           justifyContent="space-between"
           columnGap="20px"
           zIndex="2"
+          sx={{'&hover' : {color: shades.secondary[300]}}}
           >
-              <IconButton sx={{color: "black"}}>
+              <IconButton sx={{
+                '&:hover' : {color: shades.secondary[300]},
+                color: "black" }}>
                 <SearchOutlined />
               </IconButton>
-              <IconButton sx={{color: "black"}}>
+              <IconButton sx={{
+                '&:hover' : {color: shades.secondary[300]},
+                color: "black"} }>
                 <PersonOutline />
               </IconButton>
               <Badge
@@ -66,11 +71,15 @@ const Navbar = () =>{
               >
               <IconButton 
                 onClick={()=> dispatch(setIsCartOpen({}))}
-                sx={{color: "black"}}>
+                sx={{
+                  '&:hover' : {color: shades.secondary[300]},
+                  color: "black"}}>
                 <ShoppingBagOutlined />
               </IconButton>
               </Badge>
-              <IconButton sx={{color: "black"}}>
+              <IconButton sx={{
+                '&:hover' : {color: shades.secondary[300]},
+                color: "black"}}>
                 <MenuOutlined />
               </IconButton>
           </Box>

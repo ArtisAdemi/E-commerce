@@ -1,9 +1,16 @@
 import React from 'react'
 import Navbar from '../global/Navbar'
+import {MainCarousel, ShoppingList} from "../"
 
 const Home= () => {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <MainCarousel />
+      <ShoppingList />
+    </div>
+    
+
   )
 }
 
