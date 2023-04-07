@@ -25,6 +25,7 @@ const CartMenu = () => {
     const totalPrice = cart.reduce((total, item) => {
         return total + item.count * item.attributes.price;
     }, 0);
+    
   return (
     <Box //overlay
         display={isCartOpen ? "block" : "none"}
@@ -58,6 +59,7 @@ const CartMenu = () => {
                 {/* Cart List */}
                 <Box>
                     {cart.map((item) => (
+                        
                         <Box key={`${item.attributes.name}-${item.id}`}>
                             <FlexBox p="15px 0">
                                 <Box flex ="1 1 40%">
@@ -65,7 +67,7 @@ const CartMenu = () => {
                                         alt={item?.name}
                                         width="123px"
                                         height="164px"
-                                        src={`http://localhost:1337${item?.attributes?.iamge?.data?.attributes?.formats?.medium?.url}`}
+                                        src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url ? item?.attributes?.image?.data?.attributes?.formats?.medium?.url : item?.attributes?.image?.data?.attributes?.formats?.small?.url}`}
                                     />
                                 </Box>
                                 <Box flex ="1 1 60%">
