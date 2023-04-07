@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
-import {ItemDetails, Home, Checkout, Confirmation, CartMenu} from "./scenes"
+import {ItemDetails, Home, Checkout, Confirmation, CartMenu, Footers} from "./scenes"
 
 
 const ScrollToTop = () => {
@@ -25,6 +25,7 @@ function App() {
       <Route path="checkout/success" element={<Confirmation />} />
     </Routes>
     <CartMenu />
+    <Footers />
     </BrowserRouter>
   );
 }

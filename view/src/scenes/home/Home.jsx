@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../global/Navbar'
 import {MainCarousel, ShoppingList} from "../"
+import Subscribe from './Subscribe'
+import Footers from '../global/Footers'
 
 const Home= () => {
   return (
@@ -8,6 +10,8 @@ const Home= () => {
       <Navbar />
       <MainCarousel />
       <ShoppingList />
+      <Subscribe />
+     
     </div>
     
 
