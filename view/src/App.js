@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
-import {ItemDetails, Home, Checkout, Confirmation, CartMenu, Footers} from "./scenes"
+import {ItemDetails, Home, Checkout, Confirmation, CartMenu, Footers, Navbar} from "./scenes"
 
 
 const ScrollToTop = () => {
@@ -18,6 +18,7 @@ function App() {
   return (
     <BrowserRouter>
     <ScrollToTop />
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="item/:itemId" element={<ItemDetails />} />

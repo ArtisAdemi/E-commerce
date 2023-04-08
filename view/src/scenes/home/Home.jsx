@@ -7,7 +7,7 @@ import Footers from '../global/Footers'
 const Home= () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <MainCarousel />
       <ShoppingList />
       <Subscribe />
